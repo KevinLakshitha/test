@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+       
+         
+
+ <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>dirextourspackage.LoginServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/neww</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>loginm</servlet-name>
+    <servlet-class>dirextourspackage.managerloginservlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>loginm</servlet-name>
+    <url-pattern>/newM</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+
+
+
+
+  <servlet>
+    <description></description>
+    <display-name>assignServlet</display-name>
+    <servlet-name>assignServlet</servlet-name>
+    <servlet-class>dirextourspackage.managerInsert</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>assignServlet</servlet-name>
+    <url-pattern>/assign</url-pattern>
+  </servlet-mapping>    
+
+    <servlet>
+    <servlet-name>add</servlet-name>
+    <servlet-class>dirextourspackage.managerInsert</servlet-class>
+    
+    </servlet>
+    
+    <servlet-mapping>
+    <servlet-name>add</servlet-name>
+    <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+  
+  
+  <servlet>      
+     <servlet-name>update</servlet-name>
+    	<servlet-class>dirextourspackage.managerUpdate</servlet-class>     
+    </servlet>     
+         
+     <servlet-mapping>
+    	<servlet-name>update</servlet-name>
+    	<url-pattern>/rat</url-pattern>
+    </servlet-mapping> 
+         
+   
+          <servlet>      
+     <servlet-name>search</servlet-name>
+    	<servlet-class>dirextourspackage.Searchmanager</servlet-class>     
+    </servlet> 
+    
+    <servlet-mapping>
+    	<servlet-name>search</servlet-name>
+    	<url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+
+
+  <servlet>      
+     <servlet-name>searchpayment</servlet-name>
+    	<servlet-class>dirextourspackage.paymentservlet</servlet-class>     
+    </servlet> 
+    
+    <servlet-mapping>
+    	<servlet-name>searchpayment</servlet-name>
+    	<url-pattern>/paymentidd</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <servlet>      
+     <servlet-name>delete</servlet-name>
+    	<servlet-class>dirextourspackage.managerDelete</servlet-class>     
+    </servlet> 
+    
+    <servlet-mapping>
+    	<servlet-name>delete</servlet-name>
+    	<url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+      
+  
+    
+    </web-app>
